@@ -13,4 +13,4 @@ Generates pi to 100 digits
 
 ## Credit
 
-Spigot algorith developed by A. Sale, D. Saada, S. Rabinowitz
+Spigot algorithm developed by A. Sale, D. Saada, S. Rabinowitz
