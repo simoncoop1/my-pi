@@ -1,7 +1,7 @@
 # My-Pi
 
 ## About
-My pi generator implementing Spigot algorithm. Fast efficient algorithm able to generate many digits quickly.
+My pi generator implementing Spigot algorithm in Python. Fast efficient algorithm able to generate many digits quickly.
 
 ## Running
 
