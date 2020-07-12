@@ -11,7 +11,7 @@ def cCo ( col):
         a[5][col-1]=int(a[5][col]/10)
     else:
 	    a[6][col]=a[5][col]%a[1][col]
-	    a[4][col-1]=(a[5][col]/a[1][col])*a[0][col]#return an int?
+	    a[4][col-1]=int(a[5][col]/a[1][col])*a[0][col]#return an int?
 
 def init(dcs,ind):
     
@@ -78,7 +78,12 @@ b=[None]
 for x in range(int(dgs*cmpm)+1):
     b.append(2)
 
+print(b)
+
 a=init(dgs,b)
+
+print(a)
+print(dgs)
 
 for x in range(dgs):
 
@@ -100,5 +105,6 @@ for x in range(dgs):
 
 
 #print(np.matrix(a))
-print pi
+print(a)
+print(pi)
 
