@@ -78,12 +78,8 @@ b=[None]
 for x in range(int(dgs*cmpm)+1):
     b.append(2)
 
-print(b)
-
 a=init(dgs,b)
 
-print(a)
-print(dgs)
 
 for x in range(dgs):
 
@@ -105,6 +101,5 @@ for x in range(dgs):
 
 
 #print(np.matrix(a))
-print(a)
 print(pi)
 
