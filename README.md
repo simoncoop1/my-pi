@@ -6,7 +6,7 @@ My pi generator implementing Spigot algorithm in Python. Fast efficient algorith
 ## Running
 
 ```
-python my-spigot.py 100
+python3 my-spigot.py 100
 ```
 
 Generates pi to 100 digits
