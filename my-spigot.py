@@ -1,6 +1,7 @@
 import numpy as np
 import sys
 
+# calculate one column of the table
 def cCo ( col): 
     a[3][col]=a[2][col]*10
     #a[4][col]=?
@@ -15,13 +16,9 @@ def cCo ( col):
 
 def init(dcs,ind):
     
-    ## table or the form three lines of headers, then each 4 rows represents
-    ## calculation of a digit
-    ##
-
-    ##assume its 4
-    ##to get width times by 3.32
-
+    ## table with three lines of headers/redetermined values, then each 4 rows 
+    ## for values to be filled as algorithm progresses
+    ##to get width "desired digits" multiplied 3.32
 
     w=int(dcs*cmpm)+1+1
     h = 3 + (dcs*4)
@@ -65,21 +62,21 @@ def init(dcs,ind):
 
     return a
 
-pi=[] ##counting of pi
+pi=[] ##counting of pi, the answer
 dgs = 50  ##how many digits to compute for
 cmpm = 3.32 ## times by number of digits for array size required
 
 if len(sys.argv) >1:
     dgs = int(sys.argv[-1])
 
-##a = [["pi", "r", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], ["=", None,3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25], [None,2,2,2,2,2,2,2,2,2,2,2,2,2],[None,None,None,None,None,None,None,None,None,None,None,None,None,None],[None,0,0,0,0,0,0,0,0,0,0,0,0,0],[None,None,None,None,None,None,None,None,None,None,None,None,None,None],[None,None,None,None,None,None,None,None,None,None,None,None,None,None]]
+# this is how a calculation matrix would be initialised for calucalting pi to 4 digits
+#a = [["pi", "r", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], ["=", None,3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25], [None,2,2,2,2,2,2,2,2,2,2,2,2,2],[None,None,None,None,None,None,None,None,None,None,None,None,None,None],[None,0,0,0,0,0,0,0,0,0,0,0,0,0],[None,None,None,None,None,None,None,None,None,None,None,None,None,None],[None,None,None,None,None,None,None,None,None,None,None,None,None,None]]
 
 b=[None]
 for x in range(int(dgs*cmpm)+1):
     b.append(2)
 
 a=init(dgs,b)
-
 
 for x in range(dgs):
 
@@ -94,11 +91,9 @@ for x in range(dgs):
     pi.append(a[5][0])
 
     #print pi
-
     #print(np.matrix(a))
 
     a=init(dgs,a[6])
-
 
 #print(np.matrix(a))
 print(pi)
