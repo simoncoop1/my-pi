@@ -35,16 +35,12 @@ def init(dcs,ind):
         sl.append((x*2)+1)
 
     tl=ind
-    ##tl=[None]
-    ##for x in range(w-1):
-    ##    tl.append(2)
 
     a.append(fl)
     a.append(sl)
     a.append(tl)
 
     ##each calc digit is done in 4 rows
-    ##for k in range(1,dcs+1):
 
     ## now add the rows for a single digit calc (4 rows or * 10, co, sum, rem
     for x in range(1,5):
@@ -90,11 +86,7 @@ for x in range(dgs):
 
     pi.append(a[5][0])
 
-    #print pi
-    #print(np.matrix(a))
-
     a=init(dgs,a[6])
 
-#print(np.matrix(a))
 print(pi)
 
